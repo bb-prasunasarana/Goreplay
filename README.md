@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Goreplay
-=======
 <a href="https://semgrep.dev/login?utm_source=github&utm_medium=badge&utm_campaign=growth-oss"><img src="https://img.shields.io/badge/semgrep-security-green.svg" /></a> [![GitHub release](https://img.shields.io/github/release/buger/gor.svg?maxAge=3600)](https://github.com/buger/goreplay/releases) [![codebeat](https://codebeat.co/badges/6427d589-a78e-416c-a546-d299b4089893)](https://codebeat.co/projects/github-com-buger-gor) [![Go Report Card](https://goreportcard.com/badge/github.com/buger/gor)](https://goreportcard.com/report/github.com/buger/gor) [![Join the chat at https://gitter.im/buger/gor](https://badges.gitter.im/buger/gor.svg)](https://gitter.im/buger/gor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
 ![Go Replay](http://i.imgur.com/ZG2ki5n.png)
@@ -73,4 +70,3 @@ If you are using Gor, we are happy to add you to the list and share your story, 
 ## Author
 
 Leonid Bugaev, [@buger](https://twitter.com/buger), https://leonsbox.com
->>>>>>> 84cefe8 (Initial commit)

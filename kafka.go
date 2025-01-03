@@ -97,6 +97,14 @@ func NewTLSConfig(clientCertFile, clientKeyFile, caCertFile string) (*tls.Config
 // NewKafkaConfig returns Kafka config with or without TLS
 func NewKafkaConfig(saslConfig *SASLKafkaConfig, tlsConfig *KafkaTLSConfig) *sarama.Config {
 	config := sarama.NewConfig()
+
+	// Increase fetch size
+	config.Consumer.Fetch.Default = 10 * 1024 * 1024 // 10 MB
+	config.Consumer.Fetch.Max = 50 * 1024 * 1024     // 50 MB
+
+	// Adjust other consumer settings as needed
+	config.Consumer.MaxWaitTime = 10 // Reduce wait time for responsiveness
+
 	// Configuration options go here
 	if tlsConfig != nil && (tlsConfig.ClientCert != "" || tlsConfig.CACert != "") {
 		config.Net.TLS.Enable = true
